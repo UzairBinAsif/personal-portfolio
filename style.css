@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background: rgb(166, 84, 243); /* Highlight background */
+    color: white;      /* Highlighted text color */
+}
+
+body {
+    background-color: rgb(11, 37, 92);
+    color: white;
+}
+
+nav {
+    background-color: rgb(16, 43, 101);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+}
+
+.right-box > ul {
+    display: flex;
+    justify-content: center;
+}
+
+.right-box > ul > li > a {
+    color: white;
+    text-decoration: none;
+    transition: 0.1s ease-in-out;
+}
+
+.right-box > ul > li > a:hover {
+    color: rgb(147, 81, 240);
+    font-size: 19px;
+}
+
+.right-box > ul > li {
+    list-style: none;
+    margin: 0px 20px;
+}
+
+.left-box {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.first-sec {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 16vh;
+    padding-top: 50px;
+}
+
+.first-sec-left > img {
+    border-radius: 1%;
+    width: 90%;
+    /* background-color: red; */
+}
+
+.first-sec-right {
+    font-size: 40px;
+    /* background-color: red; */
+}
+
+.first-sec-left {
+    /* width: 30%; */
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+}
+
+.first-sec-right > :nth-child(1) {
+    color: rgb(166, 84, 243);
+    font-weight: 500;
+    transition: 0.07s ease-in-out;
+}
+
+.first-sec-right > :nth-child(1):hover {
+    text-shadow: 0px 0px 10px rgb(170, 119, 218);
+    cursor: pointer;
+}
+
+#element {
+    transition: 0.1s ease-in-out;
+}
+
+#element:hover {
+    text-shadow: 0px 0px 10px rgb(178, 126, 227);
+    cursor: pointer;
+}
+
+.second-sec {
+    max-width: 80vw;
+    margin: auto;
+}
+
+.second-sec {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info {
+    margin-top: 25px;
+}
