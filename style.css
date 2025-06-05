@@ -11,8 +11,8 @@ html {
 }
 
 ::selection {
-    background: rgb(166, 84, 243); /* Highlight background */
-    color: white;      /* Highlighted text color */
+    background: rgb(166, 84, 243);
+    color: white;
 }
 
 body {
@@ -66,17 +66,13 @@ nav {
 .first-sec-left > img {
     border-radius: 1%;
     width: 90%;
-    /* background-color: red; */
 }
 
 .first-sec-right {
     font-size: 40px;
-    /* background-color: red; */
 }
 
 .first-sec-left {
-    /* width: 30%; */
-    /* background-color: aqua; */
     display: flex;
     justify-content: center;
 }
@@ -115,4 +111,44 @@ nav {
 
 .info {
     margin-top: 25px;
+}
+
+footer {
+    background-color: #0a152b;
+    height: 28vh;
+    padding: 25px 0px;
+}
+
+.footer > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer > :nth-child(1) {
+    font-size: 20px;
+}
+
+.footer div a {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    transition: 0.07s ease-in-out;
+    line-height: 2rem;
+}
+
+.footer div a:hover {
+    color: rgb(147, 81, 240);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 80vw;
+}
+
+footer > :last-child {
+    margin: auto;
+    margin-top: 70px;
+    max-width: 80vw;
 }
