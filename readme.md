@@ -1,1 +1,2 @@
-https://github.com/UzairBinAsif/personal-portfolio
+# Live Published Link 👇
+https://uzairbinasif.github.io/

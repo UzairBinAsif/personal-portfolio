@@ -28,6 +28,10 @@ nav {
     height: 8vh;
 }
 
+.right-box-2 {
+    display: none;
+}
+
 .right-box > ul {
     display: flex;
     justify-content: center;
@@ -77,13 +81,14 @@ nav {
     justify-content: center;
 }
 
-.first-sec-right > :nth-child(1) {
+.first-sec-right > :nth-child(2) > a {
+    text-decoration: none;
     color: rgb(166, 84, 243);
     font-weight: 500;
     transition: 0.07s ease-in-out;
 }
 
-.first-sec-right > :nth-child(1):hover {
+.first-sec-right > :nth-child(2) > a:hover {
     text-shadow: 0px 0px 10px rgb(170, 119, 218);
     cursor: pointer;
 }
@@ -117,6 +122,7 @@ footer {
     background-color: #0a152b;
     height: 28vh;
     padding: 25px 0px;
+    min-height: fit-content;
 }
 
 .footer > div {
@@ -151,4 +157,115 @@ footer > :last-child {
     margin: auto;
     margin-top: 70px;
     max-width: 80vw;
+}
+
+@media screen and (max-width: 1280px) {
+    .footer div a {
+        font-size: 14px;
+    }
+
+    .footer > :nth-child(1) {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer div a {
+        font-size: 12px;
+    }
+
+    .footer > :nth-child(1) {
+        font-size: 16px;
+    }
+
+    .left-box {
+        font-size: 26px;
+    }
+
+    .first-sec-right > p {
+        font-size: 30px;
+    }
+
+    .first-sec-right > div {
+        font-size: 30px;
+    }
+
+    .first-sec-right > span {
+        font-size: 30px;
+    }
+
+    .first-sec-left {
+        width: 280px;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .footer > :nth-child(1) {
+        display: none;
+    }
+    
+    .footer div a {
+        font-size: 12.6px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .first-sec-left {
+        width: 200px;
+    }
+
+    .left-box {
+        font-size: 24px;
+        font-weight: 400;
+    }
+    
+    .footer {
+        flex-direction: column;
+    }
+    
+    .footer div {
+        text-align: center;
+        margin: 20px 0;
+        gap: 10px;
+    }
+
+    .right-box {
+        display: none;
+    }
+    
+    .right-box-2 {
+        display: flex;
+        align-items: center;
+    }
+    
+    .right-box-2 > img:active {
+        background-color: black;
+        border-radius: 50%;
+    }
+    
+    .footer div a {
+        font-size: 14px;
+    }
+    
+    footer {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    
+}
+
+
+@media screen and (max-width: 640px) {
+    .first-sec {
+        flex-direction: column-reverse;
+        margin-top: 3vh;
+        margin-bottom: 14vh;
+        gap: 50px;
+    }
+
+    .first-sec-left {
+        width: 300px;
+        /* margin: 100px 0px; */
+    }
 }
